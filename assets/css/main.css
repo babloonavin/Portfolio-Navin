@@ -108,6 +108,21 @@ h6 {
   margin-bottom: 24px;
   font-weight: 600;
 }
+.swal-title {
+  color: #000 !important;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.swal-popup {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.swal-confirm-button {
+  background-color: #3085d6 !important;
+  color: #fff !important;
+}
 
 .php-email-form .loading {
   display: none;

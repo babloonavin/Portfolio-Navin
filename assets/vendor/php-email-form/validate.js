@@ -22,8 +22,9 @@
         return;
       }
       thisForm.querySelector('.loading').classList.add('d-block');
-      thisForm.querySelector('.error-message').classList.remove('d-block');
-      thisForm.querySelector('.sent-message').classList.remove('d-block');
+      // thisForm.querySelector('.error-message').classList.remove('d-block');
+      thisForm.querySelector('.sent-message').classList.add('d-block');
+
 
       let formData = new FormData( thisForm );
 
@@ -65,12 +66,22 @@
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
       if (data.trim() == 'OK') {
-        thisForm.querySelector('.sent-message').classList.add('d-block');
+        Swal.fire({
+          icon: 'success',
+          title: 'Message Sent!',
+          text: 'Your message has been sent. Thank you!',
+          customClass: {
+            title: 'swal-title',
+            popup: 'swal-popup',
+            confirmButton: 'swal-confirm-button'
+          }
+        });
         thisForm.reset(); 
       } else {
         throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
       }
     })
+    
     .catch((error) => {
       displayError(thisForm, error);
     });
@@ -78,8 +89,8 @@
 
   function displayError(thisForm, error) {
     thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = error;
-    thisForm.querySelector('.error-message').classList.add('d-block');
+    // thisForm.querySelector('.error-message').innerHTML = error;
+    // thisForm.querySelector('.error-message').classList.add('d-block');
   }
 
 })();
