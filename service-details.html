@@ -4,13 +4,15 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Service Details - iPortfolio Bootstrap Template</title>
+  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -36,30 +38,43 @@
   ======================================================== -->
 </head>
 
-<body class="service-details-page">
+<body class="portfolio-details-page">
 
   <header id="header" class="header dark-background d-flex flex-column">
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+      <img src="assets/img/my-profile-img.jpeg" alt="" class="img-fluid rounded-circle">
+       
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
       <!-- Uncomment the line below if you also wish to use an image logo -->
       <!-- <img src="assets/img/logo.png" alt=""> -->
-      <h1 class="sitename">Alex Smith</h1>
+      <h1 class="sitename">Navin B.S</h1>
     </a>
-
     <div class="social-links text-center">
-      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.linkedin.com/in/b-s-navin-b56339203" target="_blank">
+        <i class="fab fa-linkedin fa-2x" style="color:#0077b5;"></i>
+      </a>
+      
+      <a href="https://github.com/babloonavin" target="_blank">
+        <i class="fab fa-github fa-2x" style="color:#000;"></i>
+      </a>
+      
+      <a href="https://www.instagram.com/babloo_navin?igsh=dXNtaWN4ODhhMDhw" target="_blank">
+        <i class="fab fa-instagram fa-2x" style="color:#E1306C;"></i>
+      </a>
+      
+      <a href="https://wa.me/916383839376" target="_blank">
+        <i class="fab fa-whatsapp fa-2x" style="color:#25D366;"></i>
+      </a>
+      <a href="https://youtube.com/@navinexplores?si=Y-LO59zmBeTRI2TR" target="_blank">
+        <i class="fab fa-youtube fa-2x" style="color:#FF0000;"></i>
+      </a>
     </div>
 
-    <nav id="navmenu" class="navmenu">
+    <!-- <nav id="navmenu" class="navmenu">
       <ul>
         <li><a href="#hero"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
@@ -85,7 +100,7 @@
         </li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
-    </nav>
+    </nav> -->
 
   </header>
 
@@ -94,60 +109,110 @@
     <!-- Page Title -->
     <div class="page-title dark-background">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Service Details</h1>
+        <h1 class="mb-2 mb-lg-0">Personal Portfolio </h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Service Details</li>
+            <li class="current">Personal Portfolio </li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-    <!-- Service Details Section -->
-    <section id="service-details" class="service-details section">
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
 
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="row gy-4">
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="services-list">
-              <a href="#" class="active">Web Design</a>
-              <a href="#">Software Development</a>
-              <a href="#">Product Management</a>
-              <a href="#">Graphic Design</a>
-              <a href="#">Marketing</a>
-            </div>
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
 
-            <h4>Enim qui eos rerum in delectus</h4>
-            <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.</p>
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/product-1.jpeg" alt="">
+                </div>
+
+                
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/product-3.jpeg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/books-1.jpeg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/books-2.jpeg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/books-3.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/branding-1.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/branding-2.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/branding-3.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/product-2.jpeg" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
 
-          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-            <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
-            <p>
-              Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
-            </ul>
-            <p>
-              Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste veniam repellat odit. Aut pariatur itaque nesciunt fuga.
-            </p>
-            <p>
-              Sunt rem odit accusantium omnis perspiciatis officia. Laboriosam aut consequuntur recusandae mollitia doloremque est architecto cupiditate ullam. Quia est ut occaecati fuga. Distinctio ex repellendus eveniet velit sint quia sapiente cumque. Et ipsa perferendis ut nihil. Laboriosam vel voluptates tenetur nostrum. Eaque iusto cupiditate et totam et quia dolorum in. Sunt molestiae ipsum at consequatur vero. Architecto ut pariatur autem ad non cumque nesciunt qui maxime. Sunt eum quia impedit dolore alias explicabo ea.
-            </p>
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>About</h3>
+              <!-- <ul>
+                <li><strong>Category:</strong> UI/UX Design & Front-End Development</li>
+                <li><strong>Clients:</strong> MSN, Indoco, Solara, Emerson</li>
+                <li><strong>Project Year:</strong> 2023 – 2024</li>
+                <li><strong>Company:</strong> <a href="https://www.codentrixtechnologies.com/" target="_blank">Codentrix Technologies</a></li>
+              </ul> -->
+              
+              <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+                <h2>YouTube and Social Media</h2>
+                <p>
+                  I'm Navin — a passionate traveler, nature enthusiast, and content creator. I love capturing the essence of places through photography and storytelling. Whether it's a peaceful mountain trail or a bustling street, I turn moments into visual stories through my vlogs, reels, and photos.
+
+Alongside content creation, I also do promotional collaborations and love exploring the creative side of video editing and branding. My creative journey continues on YouTube and Instagram, where I share my adventures and inspire others to explore the world around them.
+                </p>
+<br>
+              
+              </div>
+              
           </div>
 
         </div>
 
       </div>
 
-    </section><!-- /Service Details Section -->
+    </section><!-- /Portfolio Details Section -->
 
   </main>
 
